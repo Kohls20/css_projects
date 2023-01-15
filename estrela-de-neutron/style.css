@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div ::after,
+::before {
+    content: "";
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div1::after,
+.div2::after,
+.div3::after,
+.div4::after,
+.div5::after,
+.div6::after,
+.div7::after,
+.div8::after,
+.div1::before,
+.div2::before,
+.div3::before,
+.div4::before,
+.div5::before,
+.div6::before,
+.div7::before,
+.div8::before {
+    border-radius: 500px 0;
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(0, 204, 255, 0.3),
+        rgba(1, 90, 255, 0.2),
+        rgba(255, 0, 255, 0.05),
+        rgba(0, 0, 0, 0.2)
+    );
+}
+
+.div1 {
+    rotate: 0deg;
+}
+.div2 {
+    rotate: 22.5deg;
+}
+.div3 {
+    rotate: 45deg;
+}
+.div4 {
+    rotate: 67.5deg;
+}
+.div5 {
+    rotate: 90deg;
+}
+.div6 {
+    rotate: 112.5deg;
+}
+.div7 {
+    rotate: 135deg;
+}
+.div8 {
+    rotate: 157.5deg;
+}
+
+/*after*/
+
+.div1::after,
+.div2::after,
+.div3::after,
+.div4::after,
+.div5::after,
+.div6::after,
+.div7::after,
+.div8::after {
+    border-color: rgba(255, 235, 205, 0.3);
+    rotate: 7.5deg;
+}
+
+.div1::before,
+.div2::before,
+.div3::before,
+.div4::before,
+.div5::before,
+.div6::before,
+.div7::before,
+.div8::before {
+    border-color: rgba(21, 255, 0, 0.3);
+    rotate: 15deg;
+}

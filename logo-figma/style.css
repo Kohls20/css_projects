@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    max-width: fit-content;
+}
+
+.div {
+    width: 100px;
+    height: 100px;
+}
+
+.div1 {
+    background-color: red;
+    border-radius: 50% 0 0 50%;
+}
+
+.div3 {
+    background-color: blueviolet;
+    border-radius: 50% 0 0 50%;
+}
+
+.div5 {
+    background-color: mediumseagreen;
+    border-radius: 50% 0 50% 50%;
+}
+
+.div2 {
+    background-color: coral;
+    border-radius: 0 50% 50% 0;
+}
+
+.div4 {
+    background-color: lightseagreen;
+    border-radius: 50%;
+}
